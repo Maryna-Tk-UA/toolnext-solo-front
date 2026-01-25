@@ -36,7 +36,7 @@ const DesktopMenu = () => {
             Мій профіль
           </Link>
 
-          <Link className={css.publishBtnDesktop} href="/tools/create">
+          <Link className={css.publishBtnDesktop} href="/tools/new">
             Опублікувати оголошення
           </Link>
 

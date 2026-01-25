@@ -13,7 +13,7 @@ const userLinks = [
   { href: "/", label: "Головна" },
   { href: "/tools", label: "Інструменти" },
   { href: "/profile", label: "Мій профіль" },
-  { href: "/tools/create", label: "Опублікувати оголошення" },
+  { href: "/tools/new", label: "Опублікувати оголошення" },
 ];
 
 const Footer = () => {

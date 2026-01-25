@@ -5,8 +5,8 @@ import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 
 const Header = () => {
-  const isAuth = true;
-  //   const isAuth = false;
+  // const isAuth = true;
+  const isAuth = false;
 
   return (
     <header className={css.header}>
@@ -23,7 +23,7 @@ const Header = () => {
 
         <div className={css.tabGroup}>
           {isAuth && (
-            <Link href="/tools/create" className={css.createLink}>
+            <Link href="/tools/new" className={css.createLink}>
               Опублікувати оголошення
             </Link>
           )}

@@ -15,8 +15,8 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
   const initial = name.trim().charAt(0).toUpperCase();
   const showFallback = !avatarUrl;
 
-  const isAuth = true;
-  // const isAuth = false;
+  // const isAuth = true;
+  const isAuth = false;
 
   return (
     <>
