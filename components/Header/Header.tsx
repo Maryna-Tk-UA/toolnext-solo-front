@@ -2,6 +2,7 @@ import Link from "next/link";
 import css from "./Header.module.css";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Header = () => {
   const isAuth = true;
@@ -29,6 +30,7 @@ const Header = () => {
 
           <MobileMenu />
         </div>
+        <DesktopMenu />
       </div>
     </header>
   );

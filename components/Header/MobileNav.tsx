@@ -9,10 +9,14 @@ type MobileNavProps = {
 };
 
 const MobileNav = ({ onClose }: MobileNavProps) => {
-  const avatarUrl = "/images/default-avatar.jpg";
+  const name = "Користувач";
+  const avatarUrl = "";
+  //   const avatarUrl = "/images/default-avatar.jpg";
+  const initial = name.trim().charAt(0).toUpperCase();
+  const showFallback = !avatarUrl;
 
-  //   const isAuth = true;
-  const isAuth = false;
+  const isAuth = true;
+  // const isAuth = false;
 
   return (
     <>
@@ -47,9 +51,13 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
             <div className={css.userRow}>
               <div className={css.userLeft}>
                 <div className={css.avatar}>
-                  <Image src={avatarUrl} alt="name" width={32} height={32} />
+                  {showFallback ? (
+                    <span className={css.avatarFallback}>{initial}</span>
+                  ) : (
+                    <Image src={avatarUrl} alt="name" width={32} height={32} />
+                  )}
                 </div>
-                <p className={css.userName}>name</p>
+                <p className={css.userName}>{name}</p>
               </div>
 
               <span className={css.userDivider} />
