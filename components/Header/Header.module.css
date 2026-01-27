@@ -178,6 +178,9 @@
 
 .primaryBtn:disabled {
   opacity: 0.4;
+  border-color: #8808cc;
+  background: #8808cc;
+  color: #fff;
 }
 
 .userRow {

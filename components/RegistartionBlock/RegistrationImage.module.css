@@ -1,0 +1,26 @@
+.picture {
+  display: block;
+  width: 100%;
+  max-width: 335px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .picture {
+    max-width: none;
+    width: 704px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .picture {
+    width: 525px;
+  }
+}

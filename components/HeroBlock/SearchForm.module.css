@@ -10,6 +10,7 @@
 .field {
   width: 100%;
   position: relative;
+  padding: 0;
 }
 
 .label {
@@ -83,7 +84,7 @@
 
 .searchBtn:hover,
 .searchBtn:focus-visible {
-  background-color: transparent;
+  background-color: #f2f2f2;
   border-color: #8808cc;
   color: #000;
 }
@@ -103,4 +104,38 @@
   background-color: #8808cc;
   color: #fff;
   border: 1px solid #8808cc;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: none;
+  }
+
+  .field {
+    width: 428px;
+  }
+
+  .searchBtn {
+    max-width: none;
+    width: 95px;
+    height: 41px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .field {
+    width: 416px;
+  }
+
+  .input,
+  .inputError {
+    font-size: 16px;
+  }
+
+  .input::placeholder {
+    font-size: 16px;
+  }
 }

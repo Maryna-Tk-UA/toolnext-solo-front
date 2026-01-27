@@ -3,7 +3,7 @@
   max-width: 375px;
   padding: 45px 0;
   margin: 0 auto;
-  background-image: url("/heroBackground/hero-mob-1.webp");
+  background-image: url("/images/heroBackground/hero-mob-1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,8 +12,8 @@
 @supports (background-image: image-set(url("") 1x)) {
   .hero {
     background-image: image-set(
-      url("/heroBackground/hero-mob-1.webp") 1x,
-      url("/heroBackground/hero-mob-2.webp") 2x
+      url("/images/heroBackground/hero-mob-1.webp") 1x,
+      url("/images/heroBackground/hero-mob-2.webp") 2x
     );
   }
 }
@@ -36,33 +36,48 @@
 
 @media (min-width: 768px) {
   .hero {
+    padding: 100px 0;
     max-width: none;
     width: 768px;
-    background-image: url("/heroBackground/hero-tab-1.webp");
+    background-image: url("/images/heroBackground/hero-tab-1.webp");
   }
 
   @supports (background-image: image-set(url("") 1x)) {
     .hero {
       background-image: image-set(
-        url("/heroBackground/hero-tab-1.webp") 1x,
-        url("/heroBackground/hero-tab-2.webp") 2x
+        url("/images/heroBackground/hero-tab-1.webp") 1x,
+        url("/images/heroBackground/hero-tab-2.webp") 2x
       );
     }
+  }
+
+  .container {
+    padding: 0 32px;
+    align-items: flex-start;
   }
 }
 
 @media (min-width: 1440px) {
   .hero {
+    padding: 188px 0;
     width: 1440px;
-    background-image: url("/heroBackground/hero-desk-1.webp");
+    background-image: url("/images/heroBackground/hero-desk-1.webp");
   }
 
   @supports (background-image: image-set(url("") 1x)) {
     .hero {
       background-image: image-set(
-        url("/heroBackground/hero-desk-1.webp") 1x,
-        url("/heroBackground/hero-desk-2.webp") 2x
+        url("/images/heroBackground/hero-desk-1.webp") 1x,
+        url("/images/heroBackground/hero-desk-2.webp") 2x
       );
     }
+  }
+
+  .container {
+    padding: 0 64px;
+  }
+
+  .title {
+    font-size: 56px;
   }
 }

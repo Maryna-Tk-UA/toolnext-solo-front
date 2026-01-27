@@ -1,0 +1,42 @@
+.feedbacksBlock {
+  padding: 64px 0;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 375px;
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: none;
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .feedbacksBlock {
+    padding: 112px 0;
+  }
+
+  .container {
+    padding: 0 64px;
+    width: 1440px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
