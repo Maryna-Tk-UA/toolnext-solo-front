@@ -67,6 +67,13 @@ button {
   font-family: inherit;
 }
 
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
 /* ===== Layout helpers ===== */
 html {
   scroll-behavior: smooth;

@@ -6,12 +6,12 @@ import RegistartionBlock from "@/components/RegistartionBlock/RegistartionBlock"
 
 export default function Home() {
   return (
-    <main>
+    <section>
       <HeroBlock />
       <BenefitsBlock />
       <FeaturedToolsBlock />
       <FeedbacksBlock />
       <RegistartionBlock />
-    </main>
+    </section>
   );
 }
