@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import css from "./Header.module.css";
+import base from "../../ui/ButtonLink/ButtonLink.module.css";
 import Image from "next/image";
 
 type MobileNavProps = {
@@ -35,7 +36,7 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
             </Link>
 
             <Link
-              className={css.primaryBtn}
+              className={`${css.primaryBtn} ${base.visual}`}
               href="/auth/register"
               onClick={onClose}
             >

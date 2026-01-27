@@ -1,5 +1,6 @@
 import Link from "next/link";
 import css from "./RegistartionBlock.module.css";
+import base from "../../ui/ButtonLink/ButtonLink.module.css";
 import RegistrationImage from "./RegistrationImage";
 
 const RegistartionBlock = () => {
@@ -14,7 +15,10 @@ const RegistartionBlock = () => {
             Не витрачайте гроші на купівлю — орендуйте зручно та швидко.
             Приєднуйтесь до ToolNext вже сьогодні!
           </p>
-          <Link href="/auth/register" className={css.registerBtn}>
+          <Link
+            href="/auth/register"
+            className={`${css.registerBtn} ${base.visual}`}
+          >
             Зареєструватися
           </Link>
         </div>

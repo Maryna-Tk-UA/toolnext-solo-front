@@ -1,5 +1,6 @@
 import Link from "next/link";
 import css from "./Header.module.css";
+import base from "../../ui/ButtonLink/ButtonLink.module.css";
 import Image from "next/image";
 
 const DesktopMenu = () => {
@@ -26,7 +27,10 @@ const DesktopMenu = () => {
           <Link className={css.desktopLink} href="/auth/login">
             Увійти
           </Link>
-          <Link className={css.registerBtn} href="/auth/register">
+          <Link
+            className={`${css.registerBtn} ${base.visual}`}
+            href="/auth/register"
+          >
             Зареєструватися
           </Link>
         </div>
@@ -36,7 +40,10 @@ const DesktopMenu = () => {
             Мій профіль
           </Link>
 
-          <Link className={css.publishBtnDesktop} href="/tools/new">
+          <Link
+            className={`${css.publishBtnDesktop} ${base.visual}`}
+            href="/tools/new"
+          >
             Опублікувати оголошення
           </Link>
 

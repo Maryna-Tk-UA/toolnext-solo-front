@@ -1,12 +1,13 @@
 import Link from "next/link";
 import css from "./Header.module.css";
+import base from "../../ui/ButtonLink/ButtonLink.module.css";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 
 const Header = () => {
-  // const isAuth = true;
-  const isAuth = false;
+  const isAuth = true;
+  // const isAuth = false;
 
   return (
     <header className={css.header}>
@@ -23,7 +24,10 @@ const Header = () => {
 
         <div className={css.tabGroup}>
           {isAuth && (
-            <Link href="/tools/new" className={css.createLink}>
+            <Link
+              href="/tools/new"
+              className={`${base.visual} ${css.createLink}`}
+            >
               Опублікувати оголошення
             </Link>
           )}

@@ -29,45 +29,13 @@
 
 .registerBtn {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 41px;
   width: 100%;
-  background-color: #8808cc;
-  border: 1px solid #8808cc;
-  border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
-  color: #fff;
-  transition:
-    background-color 250ms ease,
-    border-color 250ms ease,
-    color 250ms ease;
-}
-
-.registerBtn:hover,
-.registerBtn:focus-visible {
-  background-color: transparent;
-  border-color: #8808cc;
-  color: #000;
-}
-
-.registerBtn:focus {
-  outline: none;
-}
-
-.registerBtn:active {
-  background-color: #e7cdf4;
-  border-color: #8808cc;
-  color: #000;
-}
-
-.registerBtn:disabled {
-  opacity: 0.4;
-  border-color: #8808cc;
-  background: #8808cc;
-  color: #fff;
 }
 
 @media (min-width: 768px) {
