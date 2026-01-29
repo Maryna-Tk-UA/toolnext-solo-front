@@ -36,7 +36,7 @@ const MobileNav = ({ onClose }: MobileNavProps) => {
             </Link>
 
             <Link
-              className={`${css.primaryBtn} ${base.visual}`}
+              className={`${css.primaryBtn} ${base.violet}`}
               href="/auth/register"
               onClick={onClose}
             >

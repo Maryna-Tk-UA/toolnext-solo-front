@@ -26,7 +26,7 @@ const Header = () => {
           {isAuth && (
             <Link
               href="/tools/new"
-              className={`${base.visual} ${css.createLink}`}
+              className={`${base.violet} ${css.createLink}`}
             >
               Опублікувати оголошення
             </Link>

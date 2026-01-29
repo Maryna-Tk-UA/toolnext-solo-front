@@ -17,7 +17,7 @@ const RegistartionBlock = () => {
           </p>
           <Link
             href="/auth/register"
-            className={`${css.registerBtn} ${base.visual}`}
+            className={`${css.registerBtn} ${base.violet}`}
           >
             Зареєструватися
           </Link>

@@ -1,0 +1,10 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  display: block;
+  flex: 0 0 auto;
+}

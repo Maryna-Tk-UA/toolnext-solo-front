@@ -1,0 +1,53 @@
+.container {
+  max-width: 335px;
+  width: 100%;
+}
+
+.thumb {
+  height: 412px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  display: block;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 600;
+  line-height: 1.5;
+  min-height: calc(1.5em * 2);
+}
+
+.price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.detailBtn {
+  max-width: 335px;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+}

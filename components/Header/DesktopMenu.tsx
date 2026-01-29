@@ -28,7 +28,7 @@ const DesktopMenu = () => {
             Увійти
           </Link>
           <Link
-            className={`${css.registerBtn} ${base.visual}`}
+            className={`${css.registerBtn} ${base.violet}`}
             href="/auth/register"
           >
             Зареєструватися
@@ -41,7 +41,7 @@ const DesktopMenu = () => {
           </Link>
 
           <Link
-            className={`${css.publishBtnDesktop} ${base.visual}`}
+            className={`${css.publishBtnDesktop} ${base.violet}`}
             href="/tools/new"
           >
             Опублікувати оголошення
