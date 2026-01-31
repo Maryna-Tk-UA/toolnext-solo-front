@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import css from "./Header.module.css";
+import base from "../../ui/ButtonLink/ButtonLink.module.css";
 import MobileNav from "./MobileNav";
 
 const MobileMenu = () => {
@@ -29,7 +30,7 @@ const MobileMenu = () => {
   return (
     <>
       <button
-        className={css.menuBtn}
+        className={`${css.menuBtn} ${base.transparent}`}
         type="button"
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         aria-expanded={isMenuOpen}

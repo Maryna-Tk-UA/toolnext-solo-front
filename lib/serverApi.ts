@@ -23,3 +23,18 @@ export const getPopularTools = async ({ perPage }: PopToolsRequest) => {
     console.log(error);
   }
 };
+
+type FeedbacksRequest = {
+  perPage: number;
+};
+
+export const getFeedbacks = async ({ perPage }: FeedbacksRequest) => {
+  try {
+    const res = await api.get("/feedbacks", {
+      params: { perPage },
+    });
+    return res.data;
+  } catch (error) {
+    console.log(error);
+  }
+};

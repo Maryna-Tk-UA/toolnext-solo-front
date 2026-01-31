@@ -18,6 +18,108 @@
   text-align: center;
 }
 
+.sliderWrap {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  min-height: calc(1.5em * 3);
+}
+
+.author {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  border: none;
+  padding: 0;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition:
+    background-color 250ms ease,
+    outline 250ms ease,
+    outline-offset 250ms ease;
+}
+
+.dotSmall {
+  width: 8px;
+  height: 8px;
+  opacity: 0.6;
+}
+.dotMid {
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+}
+.dotMain {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+
+.dotActive {
+  background-color: #111;
+}
+
+.dot:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.nav {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.navBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -38,5 +140,13 @@
 
   .title {
     font-size: 48px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .author {
+    font-size: 16px;
   }
 }
