@@ -7,7 +7,6 @@ const PER_PAGE = 15;
 const FeedbacksBlock = async () => {
   const data = await getFeedbacks({ perPage: PER_PAGE });
   const feedbacks = data.feedbacks;
-  console.log(feedbacks);
   return (
     <article className={css.feedbacksBlock}>
       <div className={css.container}>

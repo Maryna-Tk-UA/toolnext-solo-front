@@ -1,5 +1,6 @@
 import { ToolPopular } from "@/types/tool";
 import { api } from "./api";
+import { Category } from "@/types/category";
 
 type PopToolsRequest = {
   perPage: number;
@@ -34,6 +35,19 @@ export const getFeedbacks = async ({ perPage }: FeedbacksRequest) => {
       params: { perPage },
     });
     return res.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+type CategoriesResponse = Category[];
+
+export const getCategories = async () => {
+  try {
+    const res = await api.get<CategoriesResponse>("/categories");
+    return {
+      categories: res.data,
+    };
   } catch (error) {
     console.log(error);
   }

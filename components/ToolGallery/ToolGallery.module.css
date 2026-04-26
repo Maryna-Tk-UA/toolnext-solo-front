@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 300px) and (max-width: 1439px) {
   .list > li:nth-child(n + 7) {
     display: none;
   }

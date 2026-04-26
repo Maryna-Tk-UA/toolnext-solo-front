@@ -24,3 +24,11 @@ export type ToolPopular = {
 //   createdAt: string;
 //   updatedAt: string;
 // };
+
+export type ToolsData = {
+  page: number;
+  perPage: number;
+  totalItems: number;
+  totalPages: number;
+  tools: ToolPopular[];
+};

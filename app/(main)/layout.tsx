@@ -7,11 +7,11 @@ type Props = {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <>
+    <div>
       <Header />
       <div>{children}</div>
       <Footer />
-    </>
+    </div>
   );
 };
 

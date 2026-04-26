@@ -21,7 +21,7 @@
   margin-bottom: 32px;
 }
 
-.registerBtn {
+.allToolsBtn {
   margin-top: 32px;
   max-width: 335px;
   width: 100%;
@@ -41,7 +41,7 @@
     width: 768px;
   }
 
-  .registerBtn {
+  .allToolsBtn {
     width: 192px;
     height: 41px;
   }
@@ -61,7 +61,7 @@
     font-size: 48px;
   }
 
-  .registerBtn {
+  .allToolsBtn {
     width: 213px;
     height: 44px;
     font-size: 16px;

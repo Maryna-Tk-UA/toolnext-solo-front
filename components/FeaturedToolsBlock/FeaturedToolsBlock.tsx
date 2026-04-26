@@ -14,7 +14,7 @@ const FeaturedToolsBlock = async () => {
       <div className={css.container}>
         <h2 className={css.title}>Популярні інструменти</h2>
         <ToolGallery tools={data?.tools ?? []} />
-        <Link href="/tools" className={`${base.violet} ${css.registerBtn}`}>
+        <Link href="/tools" className={`${base.violet} ${css.allToolsBtn}`}>
           До всіх інструментів
         </Link>
       </div>
